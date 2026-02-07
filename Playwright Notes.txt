@@ -1,0 +1,1024 @@
+node -v - to check if nodejs is installed or not?
+
+npm -v -to check if npm is installed or not?
+
+To set system environment-
+NODE_HOME
+
+To set policy in Powershell command- to reslove the ps1 issue: Enter the below command and Type "Yes"
+
+Set-ExecutionPolicy -Scope CurrentUser 
+-ExecutionPolicy RemoteSigned
+
+npm install -g typescript - to install typescript
+
+tsc -v -to check if typescript is installed or not?
+
+npm install -g tsx - to check if typescript executor is installed or not?
+
+tsx -v -to check if typescript executor is installed or not?
+
+User id - mwankhede221122
+Password - Wankhede@221122
+
+****************JavaScript and TypeScript****************************************
+Js and ts - both are functional programming lang - not part on OOPS
+Java C# - OOPS
+
+Static Typed languae - Complie time -typescript 
+Dynamic typed language - Run Time -javascript
+
+console.log() - console is the class in ts and js -log is method -it accepts mupltiple parameters
+
+Executute js/ts - node filename or filepath
+Execute a TS file - tsx filename or filepath
+Execute a JS file - jsx filename or filepath
+
+Comment code -
+Single line comment - //
+Multi line comment - /*     */
+
+Variable - Stored variable -single and multiple variable 
+
+let m = 10;
+let array = [10,20,30]
+
+variables------------
+
+To declare variable in ts-
+var - modern js/ts - after 2015 - version 6 - we dont use var keyword -ECMA scripts
+let - when we know value of varibale can changed any point of time
+const -when we have to declare a constant variable
+
+//variable declaraion syntax
+Keyword(var/let/const) variableName = variableValue = JS
+Keyword(var/let/const) variableName = :datatype(optional)variableValue = ts
+
+Scope of variable-
+Global variable - TO decalare outside the block of code
+Local variable - TO decalare inside the block of code using breces 
+
+Issues in var  variable-
+var variable - Scope is local and functional only if declared variable as global also
+var variable - it can be redeclared and reinitalizaton - it print last latest value if same variable
+var variable - It is not mandatory to assign the value at a time of declaration
+
+let variable -
+Scope - Block level 
+
+
+*******************Datatypes**********************************************************
+Datatypes - Which defines what type of data a variable storing
+two types of data types -
+
+1. Primitive Data types - ony have single value
+number - Combinations of interger - (22 ,-24) and floating point numbers (23.445 , 464664.74775) 
+string 
+boolean
+null 
+undefined - these 5 are included in JS and TS.
+
+typeof - is operator which return the datatypes of a variable
+let num = 10
+console.log(typeof num)
+
+string-
+Combinations of characters , Hello
+
+3 ways to declare string
+1.By using single quote ('') - String literal
+2.By using single quote ("") - String literal
+3.By using backtick (``) - Template literal
+
+To define string using backtick = 2 ways 
+1.Multi line String 
+
+   let multilne = `This is multi line string`
+
+2. For String paramerization - $(variableName)  - for calling a variable inside a string
+let age = 20
+let message = "Your age is ${age}" - it is not working doube quote
+let message = 'Your age is ${age}' -it is not working single quote
+
+let message = `Your age is ${age}` - it is only working for backtick
+console.log(message)
+
+
+only typescript data types-
+union - combinaton of other data types (number | String) - string or number 
+let union :number | string | boolean
+
+any - free to accept any type of data type
+let any1 :any = 1000
+any1 = "TS"
+any1 = true
+ay1 = null
+any1 = undefined
+
+
+void - function - if function is not returning anything by default function will have a datatype is void
+function add(){
+console.log("THIS")
+}
+
+
+JS/TS both  have - null data type - intential absence of value 
+let null1 = null
+
+5.undefined -not defined value to variable 
+let var1 :undfeined = undefined
+//Initializaton = let i=10
+//declaration = let i
+
+
+2. Non Primitive Data types - can have multiple values
+
+
+Type annotation - whenever we need to declare datatype of variable explicitly 
+
+Type inference - JS/TS automatically identifed the datatype as per declared value
+
+
+**********************************Operators*******************************************************************
+
+Operator - operator is a symbol which performs certains operations
+
+//Arithmatic operators =>
+Addition (+)
+Substraction (-)
+Multifcation (*)
+Division (/)
+modulus (%) - Reminder after the division
+console.log(num3 % num4); 10%5 =0 , 10%3 =1
+
+Exponetital (**) -Power
+Increment Operator (++)
+ 
+Postincremrnt = num5++ -First action will performed and then value of the variable will be incremented by 1
+let num6 =5
+console.log(num6++)  = 5
+console.log(num6) =6
+
+Preincrement = ++num5 - First the value of variable will incremented by 1 and then action will be performed 
+let num5 =10
+console.log(++num5) =11
+
+Decrement Operator (--)
+similar to increment as we need to do substraction
+
+//Comparision operators / Relational  =Result should be form in boolen
+Equal To (==)  - Comapres the 2 values of the variables are same or not - check only value not the data types
+Not Equal To (!=) - Comapres the 2 values of the variables should not be same- check only value not the data types
+Strict Equal To (===) -Comapres the 2 values and  the data types variables
+Strict Not Equal To (!==) -Comapres the 2 values and the data types variables are should not be same
+Greater Than (>)
+Greater Than or equal To(>=)
+less Than (<)
+less Than or equal To(<=)
+
+//Logical operators - used to combime multiple codition to get the final result.- Result should be formin boolen
+Logincal AND -(&&) - both he conditions should be true then result will get true
+Logincal OR -(||) - Either the condtions has to be true to get true result
+Logincal NOT -(!) -Reverse Result ---true to false and false to true
+ 
+
+//Assignment operators 
+Assign the value to variable using = operator 
+== - only compare the values are same or not 
+=== - compare both the values and data types are same or not
+
+
+//Ternary operators -conditional operators
+
+*********************************************************statements****************************************************
+Conditional Statements- It allows us to execute the different blocks code based on different condition
+
+if statement - This will handle only positive scenarios
+if(condition){
+}
+
+if else statement -  This will handle both positive and negative scenarios
+if(Condition){
+}
+else{
+
+}
+if else if statement - This will handle multiple conditions
+if(condition1){
+  //code
+}
+else if(condition2){
+//code
+}
+else if(conditio3){
+//code
+}
+else{
+//code - of none of the above conditons are true
+}
+
+Examle:
+
+let browser = "chrome"
+
+if(browser == "chrome"){
+ console.log("Launch chrome browser");
+}
+else if(browser == "edge"){
+ console.log("Launch edge browser");
+}
+else if(browser == "Safari"){
+ console.log("Launch Safari browser");
+}
+else if(browser == "Firefox"){
+ console.log("Launch Firefox browser");
+}else{
+console.log("Invalid browser");
+}
+
+
+switch statement - This also will handle multiple conditions
+syntax:
+
+switch(expression){
+
+case 1:
+//code
+break;  // terminate execution
+
+default:
+//Code
+
+}
+
+Example:
+
+let browserName = "chrome"
+
+switch(browserName){
+case "chrome":
+console.log("Launch Chrome browser");
+break;
+
+case "edge":
+console.log("Launch edge browser");
+break;
+
+case "firefox":
+console.log("Launch firefox browser");
+break;
+
+default:
+console.log("Invalid browser");
+
+}
+
+when we can go if else if statement- if above conditions then we cant go with switch statement
+1.condition haves ranges (>10 <10)
+2.Datatypes are different 
+3.Logical operator (&& and ||)
+
+
+Ternary operators (?:) -same like as if else statement
+Multiple chain of ternary operator is possible
+
+syntax:
+
+(condition)? if true - value : if false -value
+
+its shorthand way to writting if else statement
+
+3 parts:
+1.condition?
+2.the value if condition is true
+3.the value if condition is false
+
+let age =18;
+
+(age>=18)? "You are eligible for vote" : "You are not eligible for vote"
+
+const result = (age>=18)? "You are eligible for vote" : "You are not eligible for vote"
+console.log(result);
+
+
+//Loops----
+will excecute same block of code multiple times
+
+1.for loop
+//a.Normal / traditional for loop - when we know that how many times run the iteration.
+b.for ...of loop -loop through the array  , string -[1,2,3]
+c.for...in loop - loop through the properties of an objects - key values -property
+
+2.while loop -If we dont know how many times we have to execute the loop. - Pagination
+3.do while loop - If we want to execute the loop at least for one time before checking he condition.
+
+
+1.for loop -traditional for loop
+
+for(Initialization ; condition ; increment/decrement){
+//code 
+break;
+
+}
+
+for(let i=1 ; i<=5 ; i++){
+console.log(i)
+}
+
+for(let i=1 ; i++){
+console.log(i)
+}  - if we missed condition loop will execute infinite loop
+
+
+
+for(let i=1 ; i<=5 ; i++){
+console.log(i)
+if(i==3){
+break
+}
+}  - if we mentioned another condition in for loop - and second condition match or true - whole for loop terminated -if we wrote break.
+
+
+for(let i=1 ; i<=5 ; i++){
+console.log(i)
+if(i==3){
+continue
+}
+}
+
+if we use continue - the specifc if condition skip and doesnot print that value.
+
+
+While loop-----------
+
+intailization 
+while(condition){
+//code
+increment / decrement
+
+}
+
+
+let j =1
+while(j<6){
+ console.log(j)
+  j++
+}
+
+let k =10
+while(k > 0) {
+console.log(k)
+
+}
+
+
+do while ----------------do while will executed at least once even condition become false
+
+intailization 
+do{
+//code
+increment / decrement
+}while(condition)
+
+
+eg.
+
+let l =10
+
+do{
+ console.log(i)
+ l--
+}while(l>0)
+
+//Advanced - 
+
+function - set of instructions that performs a speicfic task
+
+1.Named function - function declaration
+2.Anonymous function - function expression -there no name for function
+3.Arrow function - ES6 -2015
+4.Constructor function - not used frequently - mostly used class 
+
+
+1.Named function - function declaration
+
+A function will declared with a name knnow as function declaration or named function
+
+function functionName (){
+  //code
+}
+
+function functionName (parameter:datatype(optional): return datatype(optional) ) {
+
+//code 
+return - the function is returning someting - to use return value to another function -before that you want store return value in variable. like const.
+
+}
+
+to call function - use name of the function
+
+2.Anonymous function-When declared function as parameter of other function is know as anonymous functon or Function Expression - call back function 
+
+test("Title" , function){
+
+}
+
+It doesnot have name 
+
+it delcared only once
+
+If you want to utiize function then we have store inside a variable
+
+function() - this is without name and also able to provide parameter and return type also
+
+let varibaleName = function(Parameter:datatypes: areguments)
+
+to call anonymous function -
+
+variableName(arguments)
+
+
+Anonymous function and Arrow function  - both are similar - call back function
+
+A function which is passed as argument to another function is know as call back function
+
+
+let annonymousFun = function(a:number ,b:number){
+console.log(a+b)
+}
+
+annonymousFun(10,20);
+
+
+//Arrow function
+
+This also no name function - ES6 - ECMA SCRIPT 6 -2015
+
+A function which declared by using arrow (=>) is know as Arrow function
+This function is also part of Anonymous function and will not have name as well
+Arrow function use to shorten the number of lines of code
+Arrow functoin can be utilized a single line function
+if there only one line of code then we can skip curly braces ({})
+if there only one parameter then we can skip parenthises 
+
+
+(parameter:datatype(optional)) => {
+
+}
+
+(a:number ,b:number) => console.log(a*b); - this function return the value as implicitly - dont write of return keyword
+
+let multiply = (a:number , b:number) =>{
+   
+
+}
+
+
+//Method overloading-
+
+Same method name but different parameters - method overloading is not allowed in JS/TS. - this is not allowed but we have below concept came.
+
+Default Parameters - By using default parameters we can achive method overloading 
+A parameter which is assigned with default value is known as default parameter
+
+
+function display (a:number , b:bumber =90){
+console.log("NUmber "+ a,b)
+
+} 
+display(5)
+display(5,10)
+
+Optional parameters:
+a parameter which may or may not provded value during the functions call is know as optional parameter.
+
+function show(a:number , b?:bumber){
+console.log("NUmber "+ a,b)
+
+} 
+show(5) ---5, undefined
+show(5,10)
+
+
+resolve undefined value -
+
+function show(a:number , b?:bumber){
+if(b==undefined)
+console.log("NUmber "+ a)
+else
+console.log("NUmber "+ a,b)
+} 
+
+We cannot defined optional parameters in javascript - only allowed in TS.
+
+
+//Rest Parameters - A parameter which can take multiple number of arguments is know as Rest parameter , it represents as (...)  3 dots.
+it will be treated as an array inside the function.
+
+function sumAll(a:number, ...num:number[]){    //or ...num:any - it should only one rest parameter and it would be only last parameter.
+console.log(a)
+console.log(num)
+
+}
+smallAll(10,1,2,"JS")
+
+
+//Arrays ---
+
+Non Primitive data types - 
+
+Array -
+
+let array = [10,20,40]
+
+console.log(array[0])
+
+Declaration - 
+Array Literal -using square brackets []
+Using New keyword -Array Constructor
+
+
+TO get array count - length
+
+To get one by one ele from array -use for loop with length property
+
+--Using for...of loop -
+
+for(variable declaration of array){
+
+}
+
+for(let element of array1){
+console.log(element)
+}
+
+*********Different types of array methods**************
+
+1.push()- to add an elements at the end of the array
+
+push(ele1, ele2...)
+
+arrayName.push()
+
+2.pop() - to remove the last element from array
+
+3.unshift(ele1, ele2 ,...) -To add the elements at the beginging of the array - opposte to push method
+
+4.shift()  - to remove the first element from array - opposite to pop method
+
+5.splice(index , number of elements to be add or removed ,ele 1, ele2...)
+
+6.slice(startIndex , endIndex) - to get portion of elemets whithn range
+
+startIndex -where extraction begines  - inclusive
+endIndex - where index extraction ends -exclusive
+
+if startindex is greater than endindex - it will return the empty values.
+
+7.indexof(element) - to get the index of the first occurance of the specificed element in array
+
+indexof(element , startIndex(optional))
+
+let array3 = [10,20,30,40,10]
+array3.indexof(10);
+array3.indexof(10 ,2)
+
+8.lastindexof(element) - to get the index of the last occurance of the specificed element in array
+
+lastindexof(element , startIndex(optional))
+ 
+9.Includes(element , startIndex(optional))- to check whether the array consists of specified value or not , it return as boolean values
+
+10.concat(array1,array2)-to merge two or more arrays and return new array
+
+let arr1 =[1,2,3]
+let aarr2 =[4,5,6]
+
+string methods-----------------------------------------------
+string----string literal -'' ," " 
+backtick - ` ` - string paramertrize and multple string
+
+
+1.length - return total number of characters in a string
+
+//stringName.length
+
+let str:string ="Hello string"
+console.log(str.length)
+
+2.charAt(index) - return the character at the specified index position 
+let str:string ="Hello string"
+console.log(str.charAt(0));
+
+3.concat(str,str1) - used to cancate/join multiple /join multiple and return a new string
+
+4.includes(substring) -Returns true if substring is found in the string otherwise false.
+
+5.indexOf(substring , startIndex) - 
+
+6.lastindexof (substring , lastIndex) -
+
+7.slice(startIndex ,lastIndex) - extract a portion of the string and returns a new string - without lastndex -as exlusive - startIndex and lastIndex both are optional
+  slice() - retun whole string
+if startindex is greater than endindex - it return the empty string 
+
+8.substring(startIndex ,lastIndex) -extract a portion of the string and returns a new string -startIndex and lastIndex both are mandatory - startIndex is mandatory
+if startindex is greater than endindex - it swap the values and return string
+
+9.startWith() - checks if the strng starts wit the specifiied substring and retuns true or false 
+let str = "Typescript is a superset of javascript"
+console.log(str.startWith("Typescript")) - true
+console.log(str.startWith("T")) - true
+console.log(str.startWith("t")) -false
+
+10.endsWith() -
+console.log(str.startWith("javascript")) = true
+ 
+11.toUpperCase()
+
+12.toLowerCase()
+
+13.trim()
+
+14.trimStart() - to check use length property
+
+15.trimEng() - to check use length property
+
+16.replace(searchValue ,newValue) - replaces the first occurance of oldvalue with newvalue and return a new string.
+
+let str = "Hello World Welcome to typescript , Typescript is awosome"
+str.replace("Typescript" ,"TS")  -Hello World Welcome to TS, Typescript is awosome - change only first occurance
+17.str.replaceAll("Typescript" ,"TS")  -Hello World Welcome to TS, TS is awosome -change All occurance
+
+
+18.split() -splits the string into an array of substrings based on a specifed searrator
+
+
+------------------Playwright--------------------------------------------------------------------------
+
+Installation - in terms of JS/TS
+
+1.install node js
+2.editior - vs code
+3.Typescript Installation - npm install -g typescript
+4.tsx lbrray installation 
+5.Playwright installation -npm init playwright
+
+to execute all tests - npx playwright test
+
+Playwright.config.ts-
+
+CICD-
+ fullyParallel = true
+ workers: process.env.CI ? 1: 10
+
+1.
+fullyParallel = true and workers  =1  - Work in sequential order
+fullyParallel = false and workers  =1 -Work in sequential order
+ workers: process.env.CI ? 1: 1
+
+ 2.
+fullyParallel = true and workers >1 -Test case will run in parallel across multiple files 
+ Workers: process.env.CI ? 1: 5
+
+3.
+fullyParallel = false and workers >1 -Test cases in a file wll run sequntially but multiple files will run in parallel
+ Workers: process.env.CI ? 1: 5
+
+to show report  - npx playwright show-report 
+to show all exuection parallel - npx playwright test  --reporter list
+Index report in html - bY default generate the report.
+
+//Playwright Architecture
+Client -server -fully duplex 
+Playwright work webSocket connection
+
+//Auto waiting-
+ 
+JS/TS -both are asynchonous in nature - By default - async and await -both are in JS/TS.
+
+//If we dont use async and await -script will executed in asynchonous mode -that is pareallel execution not a sequential mannner.
+
+ //async - means parallel execution and not a sequential 
+
+ //await -is ensured that particular line of code exceuted then it will go next line.
+ It is not working for as wating for an elements to display on a page.
+ Playwright will taken care auto waiting 
+
+ TO make a code as sequential manner to use functional level async and await at code line level.
+
+
+ //Browser and Page fixtures
+
+ the file name and extention - fileName.spec.ts or fileName.test.ts.
+
+ browser and page fixture - 
+ fixture - Prerequistion  for test execution
+
+ Build in fixtures - browser , page - setup and tear down.
+ browser - browser
+ Page - Represent a single tab or page within a browser
+
+ //Difference beween Browser and Page 
+1.Page fixture will auto launch the browser and create a single page on the browser whereas 
+browser fixture requires a couples of lines to initiate the b
+
+
+-g - grep - to filter out the tests
+
+//Locators==Identified element on the web page
+
+1. css selector  = 2
+2.Xpath    =least prefer = 3
+3.Playwright specifice locators methods - getBy - first preference -1
+
+DOM =- Document object modal
+
+
+//Playwright has three methods
+
+//Handle checkbox and radoi button 
+Click
+check -Ensure that checkbx or radio elements is checked
+uncheck -Ensure that checkbx or radio elements is unchecked
+
+textContent - return the text value from an element including the hidden elements
+innerText - Return the text value only from visisble elements
+
+alltextContents - return an array
+allinnerTexts
+
+
+//Dropdown
+
+Static dropdown -this values never get change - most of the type it will developed -select tag
+ a.Single select DD
+ b.Multi select DD
+Dynamic dropdown -this will e chnageable -non select tag - it can be div, li,ui...
+ a.Single select DD
+ b.Multi select DD
+
+1. DD using select tag-
+
+locate drop down and get the value from dropdown -
+use selectOption("pass the value" 
+or optional parammeter {label : 'Afganistan'} 
+or value 
+or index) - this method by defaut accept value aattribute
+
+if dropdwon is multi select - selectOption(['AS','AB']) 
+or selectOption ([{label: 'India'} , {label : 'China'} , {index : 20}])
+
+DD developed by NON Select tag-
+
+HAndling mouse operations- 
+click , dblclick ,rightclick
+
+//Playwright inspector- / Test Runner - is only applicable for TJ/JS
+
+npx playwright test --ui  - to open playwright inspector
+
+//Codegen -to open -npx playwright Codegen
+
+npx playwright codegen "https://demo.automationtesting.in/Windows.html"
+
+
+Run only one test -npx playwright test -g "Handling Multiple windows"
+
+Handling Alerts/popup --
+
+Dialog event - is used to handle alerts  , popups and prompts
+
+Using page.on method - 
+
+page.on('dialog' , function(dialog)) {
+
+})
+
+accept() - to click on ok button
+dismmiss() - to click on cancel button
+message() - to get a text of the alert
+
+//HAndling frames 
+
+To handle frames using frameLocator
+
+//File upload 
+single file - setInputFile("filepath");
+Multiple files -setInputFiles(["filepath","filepath2"])
+
+import path from 'path' -thsis class available in path
+
+ const filepath1 = path.join(__dirname,'../TestData/Courses.txt')
+  console.log(filepath1)
+
+  const filepath2 = path.join(__dirname,'../TestData/Courses1.txt')
+  console.log(filepath2)
+
+upload multples that also allowd in Playwright.
+
+//Shadow Root element
+
+Playwright handle internally shadowroot elements default - without writing any code
+dont use xpath in playwright to handle shadowroot elements.
+
+//Taking screenshots in Playwright
+
+1.screenshot of the page
+2.screenshot of the element
+3.screenshot of the full page
+
+
+//Handllng calender 
+
+
+//GitHub -version control tool
+
+If you work on GitHub/Bitbucket/Gitlab - we need to install Git in our local system
+git --version
+
+If repo is already exist -
+-clone the repo 
+
+1.open new terminal - copy git clone url and clone it and import folder 
+2.To Install all dependancies -npm install
+3.Create a new Branch - Staging - git checkout -b Staging ----dont work on master/main branch
+
+navigate to branch first and create new branch - 
+use commnad -git branch
+use command -git checkout -b Staging
+
+validate if the branch is created - git branch
+make all changes inside newly created branch
+
+to check the files which are modified -git status
+
+add all changes to the local chnages - git add .
+
+commit all changes to local git- git commit -m "message" 
+  //Before Push - 
+  Switch to main branch and pull latest chages - git checkout master - git pull
+  Switch Back to Staging branch  - git checkout Staging
+  merge master branch changes to Staging branch - git merge master 
+
+  push all changes to remote repo -git push origin Staging
+
+  goto github repo - you will see popup create pull request
+  create pullrequest for the changes - also assign the reviewer
+  Once reviewer approve the chnages - after merge the chnages to main /master branch -merged
+
+
+  When we agin start working on new feature - 
+  Swiched to master branch and take pull -git pull
+
+
+//Freamework - It is design principle , set of rules / guidelines
+
+//POM - Page object model  -its a design pattern used in software testing to represents web page
+It is way to organise and manage the interaction with a web page by creating the properties (variable , locators)
+and methods (loginIntoApp()) of that particular page.
+
+//THis approach reducing the code duplication , improved test maintanability  / enhancing the readability
+
+//POM framwework from scratch -
+ 
+ //There are different layers that we have to create here:
+
+ //1.Page layer - locators and methods related to specific Page- will create a package or folder (pages)
+
+//2.Test layer - will create package or folder (tests) - pure test case and assertion , we will call the methods
+from page class to test layer
+
+//3.Test data layer -JSON/EXCEL- TestData.json , TestData.xlsx -for this create TestData folder
+
+//4.Configuration Layer -playwright.config.ts - Global Configurations
+
+//5.Utils Layer - we will create an utils folder (utils) -custom function - screenshot(),scollDown(),
+getDataFromExcel() , some api methods - to get the authorization 
+
+//6.Report layer -HTML / Allure - we do not create it separatelly in playwright.
+
+Class--
+
+Class - Blueprint to create an object
+
+ES6 - ECMA SCRIPT 2015 - that is format - before this there is no class concepts in JS/TS.
+
+class is collection of properties and methods
+
+Class name should be similar to the file name and clas name should start with capital latter (Employee.ts)
+
+TO make class public - used export keyword
+
+import - to use import class function variable - whenever you want to import
+
+
+//Hooks-
+
+It is special type of function which perform certain logic , setup / teardown before and after excution of test case
+
+4 types of Hooks
+1.test.beforeAll() - it will be execututed once before executing any of the test cases - 
+Initiating the reports , log file ,DB connecttion , get all data from excel sheet.
+
+2.test.beforeEach() - It will executed once before running each and every test cases. preconditions -object create , Launch Url
+
+3.test.afterEach() - It will executed once after running each and every test cases. not needed - close the browser
+
+4.test.afterAll() - it will be execututed once after executing any of the test cases - close report generation , close DB connection , close log file.
+
+Sequence for execution - 
+
+1.test.beforeAll()
+2.test.beforeEach()
+3. test
+4.test.afterEach()
+5.test.afterAll()
+
+//Data Driven Testing in Playwright
+
+//Excel-
+
+npm install --save-dev xlsx    - to install and xlsx save library
+
+create ExcelUtils class in utils folder
+//Get the data from sheet and convert the excel in json format and return the test data
+
+//Annotations -
+
+test.skip() - marks the test as irrelavant - Playwright doesnot run the test
+
+test.fail() - marks test as failing ,playwright run  the test case and ensure it does indeed fail ,
+if test case doesn not fail ,playwright wll complain
+
+test.fixme() - opposed to test.fail() - when use test is slow or crashes
+
+test.slow() - marks the test as slow and triples the test timeout.
+
+test.describe () - group the test cases inside the test file
+
+test.step() - Define the steps inside the test case
+
+test.only() -only that particular test exceuted
+
+
+//Tag - smoke , regression , api
+
+1.Add the tag insde the test title by using @smoke @regression -this is not a standard way
+
+2.inside the {tag : @smoke}
+
+run only smoke group test cases -npx playwright test -g '@smoke'
+
+To run scripts group tag wise every time - make a settings - Package.json - key scripts  - 
+
+Existing key -   "scripts": {},
+
+"scripts" : {
+   "smokeTest" : "npx playwright test -g @smoke",
+   "regressionTest" : "npx playwright test -g @regression",
+   "fullTest" : "npx playwright test"
+},
+
+
+//Allure report
+To install allure report 
+Need java 17 or 21 installed and check environment setup
+
+differece -devDepencies and dependancey - once clone the project dev dependancey are came that time.
+
+Execute command below - npm install --save-dev allure-commandline
+
+Execute command below for playwright - npm install --save-dev allure-playwright
+
+Make configraton in ts/js playwright congif.ts - 
+
+reporter :[['html'] ,['line'] ,['allure-playwright']],
+
+Before generate run the test - npx playwright test
+
+Generate allure report - npx allure serve allure-results
+
+
+//Jenkins-  
+
+CI / CD - Before install jenkins - need java installed (any 17,21,25 java versions)
+
+TO Install -zenkins.io - download - LTS version - Generic java packager (.war)
+
+Go to download location - C:\Users\dell\Downloads>java -jar jenkins.war --httpPort=8080
+
+C:\Users\dell\.jenkins\secrets\initialAdminPassword
+Password--- e2e2139ef14241fbbacd12cc385b1ee3
+
+Git Repo-https://gitbub.com/Praveenroy05/PWTSNoc25
+
+Build -
+Execute shell
+
+Add below commands----
+npm install
+npx run smokeTest
+
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "novbatchplaywright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "smokeTest": "npx playwright test -g @smoke",
+    "regressionTest": "npx playwright test -g @regression",
+    "fullTest": "npx playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.2",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.5",
+    "xlsx": "^0.18.5"
+  }
+}
