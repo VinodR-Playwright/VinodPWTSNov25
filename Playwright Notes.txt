@@ -1006,13 +1006,16 @@ CI / CD - Before install jenkins - need java installed (any 17,21,25 java versio
 
 TO Install -zenkins.io - download - LTS version - Generic java packager (.war)
 
-Go to download location - C:\Users\dell\Downloads>java -jar jenkins.war --httpPort=8080
+Go to download location - C:\Users\dell\Downloads>java -jar jenkins.war --httpPort=8082
 
 C:\Users\dell\.jenkins\secrets\initialAdminPassword
 Password--- e2e2139ef14241fbbacd12cc385b1ee3
 
+Souce Code Management-
 Git Repo-https://gitbub.com/Praveenroy05/PWTSNoc25
+add username and password 
 
+Build steps--
 Build -
 Execute shell
 
@@ -1020,5 +1023,7 @@ Add below commands----
 npm install
 npx run smokeTest
 
-
+Build periodically--
+trigger the automation - using build periodically
+use crontab.cronhub.io - site 
 
