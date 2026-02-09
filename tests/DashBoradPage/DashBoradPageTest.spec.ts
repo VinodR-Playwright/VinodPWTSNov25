@@ -18,7 +18,7 @@ test("Add to Cart" , async({})=>{
     await expect(dashboradP.addTOCartMsg).toHaveText("Product Added To Cart")
 })
 
-test("Validate user able to view product details",{tag:'@smoke'} ,async({page})=>{
+test("Validate user able to view product details", {tag:'@smoke'} ,async({page})=>{
     await dashboradP.searchViewButton(data.productName)
     await expect(dashboradP.pdpProductName).toHaveText(data.productName)
 
