@@ -1045,3 +1045,12 @@ Fill Random data in First name , Last name and Zip
 Click on continue button
 Click on finish button
 Verify message "Thank you for your order!"
+
+//Playwright Agent -
+
+planner - expore the applcations and try to provide the test plan
+generator - transform the markdown plan into playwright test
+healer - Execute the test suite and automatically repairs failing tests
+
+To install playwright agent - use below command-
+npx playwright init-agents --loop=vscode
