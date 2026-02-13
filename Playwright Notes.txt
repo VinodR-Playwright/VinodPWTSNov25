@@ -1027,3 +1027,56 @@ Build periodically--
 trigger the automation - using build periodically
 use crontab.cronhub.io - site 
 
+--Playwright MCP-
+Model context protocol - bridge the gap btween LLMS and real world applcations.
+
+Good prompt -clarity , context and constraint --should like this.
+
+Prompt -As a QA Automation expert generate me the playwright test cases by following the same page object model  framework which is available in my project for below
+
+As a QA Automation expert generate me the playwright test cases by following the same page object model  framework which is available in my project for below
+Open @https://www.saucedemo.com/ 
+Login with Username and password
+Click On Login button
+Add Product "Sauce Labs Backpack" Into the cart
+Open the cart 
+Click on Checkout button
+Fill Random data in First name , Last name and Zip
+Click on continue button
+Click on finish button
+Verify message "Thank you for your order!"
+
+//Playwright Agent -
+
+planner - expore the applcations and try to provide the test plan
+generator - transform the markdown plan into playwright test
+healer - Execute the test suite and automatically repairs failing tests
+
+To install playwright agent - use below command-
+npx playwright init-agents --loop=vscode
+
+API Testing in Playwright-
+
+applicaton programming interface
+
+//FrontEnd - JS/TS - react ,angular ,vue
+
+
+APT-
+
+Get - Fetch the data from DB or server
+Post - Create the new records insce the DB
+Put - Upate the record if it is available else will create new record
+Delete - Delete record / data
+Patch - simple / update modification
+
+Request Url - APT - https://rahulshettyacademy.com/api/ecom/auth/login
+Request Method - POST
+Request Header - {content-type : application/json}
+Request Body - {userEmail: "test@gmail.com", userPassword: "test"} - Payload tab
+
+Response format:
+
+Status code -200
+
+Response body
