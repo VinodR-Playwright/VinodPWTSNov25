@@ -1054,3 +1054,29 @@ healer - Execute the test suite and automatically repairs failing tests
 
 To install playwright agent - use below command-
 npx playwright init-agents --loop=vscode
+
+API Testing in Playwright-
+
+applicaton programming interface
+
+//FrontEnd - JS/TS - react ,angular ,vue
+
+
+APT-
+
+Get - Fetch the data from DB or server
+Post - Create the new records insce the DB
+Put - Upate the record if it is available else will create new record
+Delete - Delete record / data
+Patch - simple / update modification
+
+Request Url - APT - https://rahulshettyacademy.com/api/ecom/auth/login
+Request Method - POST
+Request Header - {content-type : application/json}
+Request Body - {userEmail: "test@gmail.com", userPassword: "test"} - Payload tab
+
+Response format:
+
+Status code -200
+
+Response body
